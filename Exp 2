@@ -1,0 +1,88 @@
+class Cube {
+    
+    int length;
+    int breadth;
+    int height;
+
+    Cube() {
+        length = 2;
+        breadth = 3;
+        height = 4;
+    }
+
+    Cube(int l, int b, int h) {
+        length = l;
+        breadth = b;
+        height = h;
+    }
+
+    Cube(int side) {
+        length = side;
+        breadth = side;
+        height = side;
+    }
+
+    void displayVolume() {
+        int volume = length * breadth * height;
+        System.out.println("Length = " + length);
+        System.out.println("Breadth = " + breadth);
+        System.out.println("Height = " + height);
+        System.out.println("Volume = " + volume);
+        System.out.println();
+    }
+}
+
+public class CubeDemo {
+
+    public static void main(String[] args) {
+
+        Cube c1 = new Cube();
+        Cube c2 = new Cube(5);
+        Cube c3 = new Cube(6, 4, 3);
+
+        System.out.println("Cube 1:");
+        c1.displayVolume();
+
+        System.out.println("Cube 2:");
+        c2.displayVolume();
+
+        System.out.println("Cube 3:");
+        c3.displayVolume();
+
+
+class Mobile {
+
+    String company_name;
+    double screen_size;
+
+    Mobile(String company_name, double screen_size) {
+        this.company_name = company_name;
+        this.screen_size = screen_size;
+    }
+
+    void display() {
+        System.out.println("Company Name: " + company_name);
+        System.out.println("Screen Size: " + screen_size + " inches");
+        System.out.println();
+    }
+}
+
+public class MobileDemo {
+
+    public static void main(String[] args) {
+
+        Mobile m1 = new Mobile("Samsung", 6.5);
+        Mobile m2 = new Mobile("Apple", 6.1);
+        Mobile m3 = new Mobile("OnePlus", 6.7);
+        Mobile m4 = new Mobile("Motorola", 6.5);
+        Mobile m5 = new Mobile("Google", 6.3);
+
+        m1.display();
+        m2.display();
+        m3.display();
+        m4.display();
+        m5.display();
+    }
+}
+    }
+}
