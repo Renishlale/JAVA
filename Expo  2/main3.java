@@ -18,10 +18,7 @@ class Student
         System.out.println("Roll No=" + roll_no);
         System.out.println("Department=" + dept);
     }
-}
 
-public class main3
-{
     public static void main(String[] args)
     {
         Student s1 = new Student("Rahul", 1, "CSE");
