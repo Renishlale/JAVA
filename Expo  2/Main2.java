@@ -1,34 +1,36 @@
-class Mobile {
-
+```java id="v5j2ka"
+class Mobile
+{
     String company_name;
     double screen_size;
 
-    Mobile() {
+    Mobile()
+    {
         company_name = "Samsung";
         screen_size = 6.5;
     }
 
-    Mobile(String company, double size) {
+    Mobile(String company, double size)
+    {
         company_name = company;
         screen_size = size;
     }
 
-    Mobile(Mobile m) {
+    Mobile(Mobile m)
+    {
         company_name = m.company_name;
         screen_size = m.screen_size;
     }
 
-    void display() {
+    void display()
+    {
         System.out.println("Company Name: " + company_name);
         System.out.println("Screen Size: " + screen_size + " inches");
         System.out.println();
     }
-}
 
-public class Main2 {
-
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+    {
         Mobile m1 = new Mobile();
         Mobile m2 = new Mobile("Apple", 6.1);
         Mobile m3 = new Mobile(m1);
@@ -43,3 +45,4 @@ public class Main2 {
         m3.display();
     }
 }
+```
