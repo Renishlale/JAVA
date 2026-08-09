@@ -1,22 +1,23 @@
-class Area {
-
-    double area(double radius) {
+```java
+class Area
+{
+    double area(double radius)
+    {
         return 3.14 * radius * radius;
     }
 
-    int area(int side) {
+    int area(int side)
+    {
         return side * side;
     }
 
-    int area(int length, int breadth) {
+    int area(int length, int breadth)
+    {
         return length * breadth;
     }
-}
 
-public class main4 {
-
-    public static void main(String[] args) {
-
+    public static void main(String[] args)
+    {
         Area a = new Area();
 
         double circleArea = a.area(5.0);
@@ -28,3 +29,4 @@ public class main4 {
         System.out.println("Area of Rectangle = " + rectangleArea);
     }
 }
+```
