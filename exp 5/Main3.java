@@ -39,7 +39,7 @@ class SportStudent extends Student implements Sport {
     }
 }
 
-public class Main {
+public class Main3 {
     public static void main(String[] args) {
         SportStudent s = new SportStudent("Rahul", 20);
 
